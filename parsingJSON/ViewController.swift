@@ -10,8 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    
-    var typeAnimal: String!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     private  var cats: [Cats] = []
     private var dogs:Dogs?
@@ -20,8 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = animal.rawValue
+
+        activityIndicator.hidesWhenStopped = true
         
         getImage()
         
@@ -35,6 +34,8 @@ class ViewController: UIViewController {
 
 extension ViewController{
     private func getImage() {
+        activityIndicator.startAnimating()
+        
         guard let url = URL(string: animal == .dog ? Link.dogURL.rawValue : Link.catURL.rawValue) else {return}
        
         URLSession.shared.dataTask(with: url) {data, _, error in
@@ -58,7 +59,7 @@ extension ViewController{
     private func showImage() {
         var url: URL
         if self.animal == .cat {
-            guard let url_ = URL(string: cats.first?.url ?? "") else { return}
+            guard let url_ = URL(string: cats.first?.url ?? "") else {return}
             url = url_
         } else {
             guard let url_ = URL(string: dogs?.message ?? "") else {return}
@@ -73,6 +74,7 @@ extension ViewController{
             
             DispatchQueue.main.async {
                 self.imageView.image = UIImage(data: data)
+                self.activityIndicator.stopAnimating()
             }
             
         }.resume()

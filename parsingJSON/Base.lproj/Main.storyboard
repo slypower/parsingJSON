@@ -20,14 +20,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QuX-Q9-T4G">
                                 <rect key="frame" x="20" y="143" width="280" height="328"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the animal you are interested in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAQ-vD-5eW">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="96"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CJ-C4-Mj8">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="154"/>
+                                        <rect key="frame" x="0.0" y="116" width="280" height="96"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6UF-Lh-1hB">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="154"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="96"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEX-74-eCI">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="154"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="96"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
                                                     <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
@@ -50,13 +56,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTh-MV-fPh">
-                                        <rect key="frame" x="0.0" y="174" width="280" height="154"/>
+                                        <rect key="frame" x="0.0" y="232" width="280" height="96"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DPt-ba-cfD">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="154"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="96"/>
                                             </imageView>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpQ-eS-F5I">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="154"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="96"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
                                                     <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
@@ -115,6 +121,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dBO-aM-fdQ">
                                 <rect key="frame" x="20" y="44" width="280" height="504"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Z18-cw-Cjy">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -122,6 +131,8 @@
                             <constraint firstItem="dBO-aM-fdQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0L3-M4-GxN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBO-aM-fdQ" secondAttribute="trailing" constant="20" id="Jf5-qU-Oov"/>
                             <constraint firstItem="dBO-aM-fdQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VGB-BK-UTl"/>
+                            <constraint firstItem="Z18-cw-Cjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibO-9Y-tZq"/>
+                            <constraint firstItem="Z18-cw-Cjy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rap-cw-WMm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dBO-aM-fdQ" secondAttribute="bottom" constant="20" id="tAp-y1-q1b"/>
                         </constraints>
                     </view>
@@ -133,6 +144,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="Z18-cw-Cjy" id="3Q4-LZ-0ca"/>
                         <outlet property="imageView" destination="dBO-aM-fdQ" id="u2W-xi-dd7"/>
                     </connections>
                 </viewController>
@@ -160,7 +172,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xie-2m-Nc4"/>
+        <segue reference="rYR-Jk-rmL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="play.circle" catalog="system" width="128" height="121"/>

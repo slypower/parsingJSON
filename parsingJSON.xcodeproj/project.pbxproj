@@ -15,7 +15,6 @@
 		5BDBE6412802FE5700B1A9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDBE63F2802FE5700B1A9D2 /* LaunchScreen.storyboard */; };
 		5BDBE6492803069600B1A9D2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBE6482803069600B1A9D2 /* Images.swift */; };
 		5BDBE64B280314E900B1A9D2 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBE64A280314E900B1A9D2 /* ImagesViewController.swift */; };
-		5BDBE64D28031BA800B1A9D2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBE64C28031BA800B1A9D2 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		5BDBE6422802FE5700B1A9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDBE6482803069600B1A9D2 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		5BDBE64A280314E900B1A9D2 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
-		5BDBE64C28031BA800B1A9D2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 				5BDBE6422802FE5700B1A9D2 /* Info.plist */,
 				5BDBE6482803069600B1A9D2 /* Images.swift */,
 				5BDBE64A280314E900B1A9D2 /* ImagesViewController.swift */,
-				5BDBE64C28031BA800B1A9D2 /* DataManager.swift */,
 			);
 			path = parsingJSON;
 			sourceTree = "<group>";
@@ -148,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDBE64B280314E900B1A9D2 /* ImagesViewController.swift in Sources */,
-				5BDBE64D28031BA800B1A9D2 /* DataManager.swift in Sources */,
 				5BDBE6392802FE5000B1A9D2 /* ViewController.swift in Sources */,
 				5BDBE6492803069600B1A9D2 /* Images.swift in Sources */,
 				5BDBE6352802FE5000B1A9D2 /* AppDelegate.swift in Sources */,
