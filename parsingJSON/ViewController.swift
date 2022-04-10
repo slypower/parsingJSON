@@ -27,15 +27,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func updateImageButton(_ sender: UIBarButtonItem) {
+        activityIndicator.startAnimating()
         getImage()
-    }
-    
+    }    
 }
 
 extension ViewController{
     private func getImage() {
-        activityIndicator.startAnimating()
-        
+       
         guard let url = URL(string: animal == .dog ? Link.dogURL.rawValue : Link.catURL.rawValue) else {return}
        
         URLSession.shared.dataTask(with: url) {data, _, error in
